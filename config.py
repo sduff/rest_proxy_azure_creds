@@ -71,14 +71,14 @@ schema.registry.url={sr_url}
 #confluent.rest.auth.propogate.method=JETTY_AUTH
 
 # HTTPS
-#host.name=localhost
-#debug=true
-#listeners=https://0.0.0.0:8082
-#ssl.truststore.location=/etc/kafka-rest/kafka.restproxy.keystore.p12
-#ssl.truststore.password=password
-#ssl.keystore.location=/etc/kafka-rest/kafka.restproxy.keystore.p12
-#ssl.keystore.password=password
-#ssl.key.password=password
+host.name=localhost
+debug=true
+listeners=https://0.0.0.0:8082
+ssl.truststore.location=/etc/kafka-rest/kafka.restproxy.keystore.p12
+ssl.truststore.password=password
+ssl.keystore.location=/etc/kafka-rest/kafka.restproxy.keystore.p12
+ssl.keystore.password=password
+ssl.key.password=password
 """
 
 with open("/etc/kafka-rest/kafka-rest.properties", "w") as f:
